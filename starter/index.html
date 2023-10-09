@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ben Smith // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <h1>Ben Smith</h1>
     <nav>
       <!-- css needs to be added: flexbox, decoration, typography; bold, color, font-family -->
-      <ul>
+      <ul id="navLm">
         <li><a href="#about">About me</a></li>
         <li><a href="#about">work</a></li>
         <li><a href="contact">contact me</a></li>
@@ -39,7 +39,7 @@
       <!-- h2 needs to be given border right & change of color  and change to inline block -->
       <h2>About Me</h2>
       <!-- Add photo img here edit photo border radius-->
-      <img src="./images/edited selfie.jpg" alt="seflie-image">
+      <img id="selfie-image" src="./images/edited selfie.jpg" alt="selfie-image">
       <p>*details about me here*</p>
     </section>
 
@@ -50,16 +50,25 @@
 
 <!--Images of work with titles here: When images of the applications are clicked then the user is taken to that deployed application -->
 <!-- images should also be links to deployed applications -->
-     <div class="card">
+     <div class="card"><a>
     <img src="./images/02-portfolio-1.jpg" alt="led-lightboard">
+    </a>
     <div class="container">
      <h4>led lightboard </h4>
       </div>
     </div>
-      <h3>Calculator project<img src="./images/02-portfolio-2.jpg" alt="Calculator-sourcecode"></h3>
-      <h3>hipster ecommerce website<img src="./images/02-portfolio-3.jpg" alt="hipster-image"></h3>
-      <h3>Surf weather app<img src="./images/02-portfolio-4.jpg" alt="sunny-surfers"></h3>
-      <h3>Running app<img src="./images/02-run-buddy.jpg" alt="runner-app"></h3>
+    <div class="card">
+    <a>
+      <img src="./images/02-portfolio-2.jpg" alt="Calculator-sourcecode">
+    </a>
+    <div class="container">
+    <h4>Calculator project</h4>
+      </div>
+    </div>
+      
+      <h4>hipster ecommerce website<img src="./images/02-portfolio-3.jpg" alt="hipster-image"></h4>
+      <h4>Surf weather app<img src="./images/02-portfolio-4.jpg" alt="sunny-surfers"></h4>
+      <h4>Running app<img src="./images/02-run-buddy.jpg" alt="runner-app"></h4>
     </section>
 
     <!-- contact -->
