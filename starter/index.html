@@ -12,13 +12,13 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Ben Smith</h1>
+    <h1 class="header-title">Ben Smith</h1>
     <nav>
       <!-- css needs to be added: flexbox, decoration, typography; bold, color, font-family -->
       <ul id="navLm">
         <li><a href="#about">About me</a></li>
         <li><a href="#about">work</a></li>
-        <li><a href="contact">contact me</a></li>
+        <li><a href="#contact">contact me</a></li>
         <li><a href="#">resume/cv</a></li>
       </ul>
     </nav>
@@ -27,6 +27,7 @@
   <!-- hero banner -->
   <!-- this banner needs to be given css to make its width 100% -->
   <section class="hero-banner">
+    <img class="banner-image" src="./images/02-hero-bg.jpg">
     <div>
       <!-- h2 needs to be given border right & change of color and change to inline block -->
       <h2>Excited to show you my works below!</h2>
@@ -40,35 +41,60 @@
       <h2>About Me</h2>
       <!-- Add photo img here edit photo border radius-->
       <img id="selfie-image" src="./images/edited selfie.jpg" alt="selfie-image">
-      <p>*details about me here*</p>
+      <!-- *details about me here* -->
+      <p>Hello, It's nice to have you stumble upon my portfolio website.<br>
+         I'm guessing since you're here you'd like to know a little about me.<br>
+         Firstly, I am a new web developer with a thirst for knowledge in the form of languages,<br>
+         this could be in the form of foreign languages or the other type of languages programming languages.
+         My industry knowledge so far includes: 
+        </p>
+        <img class="programming" src="./images/HTML5_Logo_32.png" alt="html-5">
+        <img class="programming" src="./images/CSS3_logo_and_wordmark.svg.png" alt="css-3">
+        <img class="programming" src="./images/JavaScript-logo.png" alt="Javascript-6">
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <section class="page-section grid-container" id="work">
       <!-- h2 needs to be given border right & change of color  and change to inline block -->
-      <h2>Work</h2>
+      <h2 class="grid-item" id="work-title">Work</h2>
 
 <!--Images of work with titles here: When images of the applications are clicked then the user is taken to that deployed application -->
-<!-- images should also be links to deployed applications -->
-     <div class="card"><a>
-    <img src="./images/02-portfolio-1.jpg" alt="led-lightboard">
+     <!-- lightboard element -->
+     <div class="grid-item mainCard" id="lightboard">
+      <a href="">
+    <img id="mainCardImg"src="./images/02-portfolio-1.jpg" alt="led-lightboard">
     </a>
     <div class="container">
      <h4>led lightboard </h4>
       </div>
     </div>
-    <div class="card">
-    <a>
+    <!-- Calculator element -->
+    <div class="card grid-item" id="Calculator">
+    <a href="">
       <img src="./images/02-portfolio-2.jpg" alt="Calculator-sourcecode">
     </a>
     <div class="container">
     <h4>Calculator project</h4>
       </div>
     </div>
-      
-      <h4>hipster ecommerce website<img src="./images/02-portfolio-3.jpg" alt="hipster-image"></h4>
-      <h4>Surf weather app<img src="./images/02-portfolio-4.jpg" alt="sunny-surfers"></h4>
-      <h4>Running app<img src="./images/02-run-buddy.jpg" alt="runner-app"></h4>
+    <!-- sunny surfers element -->
+      <div class="card grid-item" id="sunny-surfers">
+        <a href="">
+        <img src="./images/02-portfolio-4.jpg" alt="sunny-surfers">
+        </a>
+        <div class="container">
+          <h4>Surf weather app</h4>
+        </div>
+      </div>
+      <!-- runner app element -->
+      <div class="card grid-item" id="runner-app">
+        <a href="">
+          <img src="./images/02-run-buddy.jpg" alt="runner-app">
+        </a>
+        <div class="container">
+          <h4>Running app</h4>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
@@ -76,6 +102,12 @@
       <!-- h2 needs to be given border right & change of color  and change to inline block -->
       <h2>Contact Me</h2>
       <!-- contact information here -->
+      <ul class="footer-nav">
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Github</a></li>
+      </ul>
     </section>
   </main>
 </body>
