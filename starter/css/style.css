@@ -10,6 +10,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color:   rgb(6,26,64);
+  overflow-x: hidden;
 }
 .header-title{
   position: relative;
@@ -58,9 +59,15 @@ h6 {
   font-weight: bold;
   color: rgb(3, 83, 164);
 }
+.align{
+  display: flex;
+  margin: auto;
+  padding: 5px;
+  width: 500px;
+}
 .programming{
   width: 20px;
-  width: 20px;
+  height: 20px;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
