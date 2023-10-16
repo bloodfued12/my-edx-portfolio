@@ -181,6 +181,28 @@ margin: 10px;
   body{
     text-align: center;
   }
+  .header-title{
+    display: flex;
+    justify-content: flex-start;
+  }
+  h1,
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #about{
+    width: 100vw;
+    height: 600px;
+  }
+  p {
+    display: block;
+    margin: 300px 5px;
+    padding: 5px;
+  }
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -192,7 +214,10 @@ margin: 10px;
   }
   #work-title{
     border-right: none;
+    display: flex;
+    justify-content: flex-start;
   }
+  
   .card{
     height:100px;
     width: 100%;
@@ -203,7 +228,7 @@ margin: 10px;
   }
   .card h4{
     bottom: 72px;
-    right: 51px;  
+    left: 1px;  
   }
   #lightboard{
     width: 100vw;
@@ -230,9 +255,76 @@ margin: 10px;
     width: 100%;
     align-items: center;
   }
-  #aelfie-image{
-    height: auto;
-    width: auto;
+  #selfie-image{
+    height: 250px;
+    width: 250px;
     margin: auto;
+  }
+}
+@media only screen and  (max-width: 720px) {
+  body{
+    text-align: center;
+  }
+  #about{
+  width: 100vw;
+  height: 600px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: "work-title"
+   "lightboard"
+   " Calculator"
+   " sunny-surfers"
+   "runner-app";
+   justify-content: center;
+  }
+  .grid-item{
+    margin: 0;
+  }
+  p {
+    display: block;
+   margin: 300px 5px;
+   padding: 5px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, 
+  h6{
+    display: inline-flex;
+    justify-content: center;
+  }
+  h1[
+    display: flex;
+    justify-content: flex-start;
+  ]
+  .card{
+    width: 998px;
+    height: 200px;
+  }
+  .card h4 {
+    position: relative;
+    left: 1px;
+  }
+  .card img{
+    width: 600px;
+    height: 200px;
+  }
+  #contact{
+    top: 2171px;
+  }
+  .align{
+    position: relative;
+    top: 293px;
+  }
+  .about-me{
+   margin: 0 auto;
+  }
+  .contact{
+    position: relative;
+    bottom: 0;
   }
 }
