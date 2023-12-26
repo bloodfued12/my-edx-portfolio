@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color:   rgb(6,26,64);
+  overflow-x: hidden;
+}
+.header-title{
+  position: relative;
+  top: 19px;
+}
+.banner-image{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+header{
+  background-color: #043075;
+  width: 100%;
+  height: 10vh;
+}
+nav{
+  margin: 5px;
+}
+#navLm{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 50px;
+  padding: 22px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#navLm li{
+  border-bottom: 5px solid black;
+  list-style: none;
+  margin: 5px;
+  text-shadow: 2px 2px 5px  rgb(239 121 99);;
+}
+a:link, a:visited{
+  color: rgb(239 121 99);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  display: inline-block;
+  font-weight: bold;
+  color: rgb(20 127 235);
+}
+.align{
+  display: flex;
+  margin: auto;
+  padding: 5px;
+  width: 500px;
+}
+.programming{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#selfie-image{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: rgb(239 121 99);
+  border: solid 4px purple;
+}
+#work-title{
+  padding-right: 67px;
+  border-right: 20px solid black;
+}
+#work{
+  height: 820px;
+}
+.mainCard{
+  width: 1000px;
+  height: 497px;
+  position: relative;
+  top: 20px;
+  color: rgb(239 121 99);
+}
+.mainCard h4{
+  left: 1px;
+}
+#mainCardImg {
+  width: 81vw;
+  height: 51vh;
+}
+.card{
+width: 450px;
+height: 200px;
+text-align: center;
+}
+.card h4, .mainCard h4{
+  position: relative;
+  bottom: 48px;
+  right: 104px;
+  color: rgb(239 121 99);
+  background-color: rgb(3, 83, 164);
+}
+.card img{
+  width: 100%;
+  height: 300px;
+}
+
+p {
+  display: inline-block;
+  position: absolute;
+  top: 413px;
+  left: 449;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(239 121 99);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "work-title lightboard lightboard lightboard" 
+  "./.. Calculator  sunny-surfers runner-app";
+  /* justify-content: space-evenly; */
+  width: 100vw;
+}
+.grid-item{
+  margin: 5px;
+}
+#work-title{
+  grid-area: work-title;
+}
+#lightboard{
+  grid-area: lightboard;
+}
+#Calculator{
+  grid-area: Calculator;
+}
+#sunny-surfers{
+  grid-area: sunny-surfers;
+}
+#runner-app{
+  grid-area: runner-app;
+}
+#contact{
+  position: absolute;
+  top: 3100px;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 250px;
+}
+.footer-nav li{
+display: flex;
+flex-direction: row;
+list-style: none;
+margin: 10px;
+}
+
+/* media queries needs to be added so that our webpage is responive on multiple device sizes */
+@media only screen and (max-width: 600px) {
+  body{
+    text-align: center;
+  }
+  .header-title{
+    display: flex;
+    justify-content: flex-start;
+  }
+  h1,
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #about{
+    width: 100vw;
+    height: 600px;
+  }
+  p {
+    display: block;
+    margin: 300px 5px;
+    padding: 5px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: "work-title"
+   "lightboard"
+   " Calculator"
+   " sunny-surfers"
+   "runner-app";
+  }
+  #work-title{
+    border-right: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .card{
+    height:100px;
+    width: 100%;
+  }
+  .card img,#mainCardImg {
+    width: 550px;
+    height: 440px;
+  }
+  .card h4{
+    bottom: 72px;
+    left: 1px;  
+  }
+  #lightboard{
+    width: 100vw;
+    height: 50vh;
+  }
+  #Calculator{
+    width: 45vw;
+    height: 50vh;
+  }
+  #sunny-surfers{
+    width: 45vw;
+    height: 50vh;
+  }
+  #runner-app{
+    width: 45vw;
+    height: 50vh;
+  }
+  #contact-me{
+    margin: 5px;
+    padding: 5px;
+  }
+  .footer-nav{
+    height: 25px;
+    width: 100%;
+    align-items: center;
+  }
+  #selfie-image{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+  }
+}
+@media only screen and  (max-width: 720px) {
+  body{
+    text-align: center;
+  }
+  #about{
+  width: 100vw;
+  height: 600px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: "work-title"
+   "lightboard"
+   " Calculator"
+   " sunny-surfers"
+   "runner-app";
+   justify-content: center;
+  }
+  .grid-item{
+    margin: 0;
+  }
+  p {
+    display: block;
+   margin: 300px 5px;
+   padding: 5px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, 
+  h6{
+    display: inline-flex;
+    justify-content: center;
+  }
+  h1[
+    display: flex;
+    justify-content: flex-start;
+  ]
+  .card{
+    width: 998px;
+    height: 200px;
+  }
+  .card h4 {
+    position: relative;
+    left: 1px;
+  }
+  .card img{
+    width: 600px;
+    height: 200px;
+  }
+  #contact{
+    top: 2171px;
+  }
+  .align{
+    position: relative;
+    top: 293px;
+  }
+  .about-me{
+   margin: 0 auto;
+  }
+  .contact{
+    position: relative;
+    bottom: 0;
+  }
+}
