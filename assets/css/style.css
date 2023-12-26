@@ -3,71 +3,76 @@
   margin: 0;
   padding: 0;
 }
+/* This adds a standard 0 margin and padding for all elements  */
 html {
   scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  padding: 0;
+/* this adds scrolling so that when the hyperlink is pressed it will scroll smoothly to the section */
+body { 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color:   rgb(6,26,64);
   overflow-x: hidden;
 }
-.header-title{
-  position: relative;
-  top: 19px;
-}
+/* This adds font family line height and background color to the body element and doesn't allow overflow on the horizontal axis */
+
 .banner-image{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 200px;
 }
+/* this adds a background image to the banner and styles it with non repeated centered and width and height */
 header{
   background-color: #043075;
   width: 100%;
   height: 10vh;
 }
+/* this gives the header element sizing and background color */
 nav{
   margin: 5px;
 }
+/* this allows space between the navigational links and other elements */
 #navLm{
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 50px;
+  bottom: 110px;
   padding: 22px;
   margin: 10px;
   text-decoration: none;
 }
-
+/* This changes the orientation of the links so that they display horizontally using flex and with styling for distance and space */
 #navLm li{
   border-bottom: 5px solid black;
   list-style: none;
   margin: 5px;
   text-shadow: 2px 2px 5px  rgb(239 121 99);;
 }
+/* points towards the nav landmarks list items giving them a bottom border colored black, no list styling, text-shadow and additional spacing */
 a:link, a:visited{
   color: rgb(239 121 99);
 }
+/* psuedo selectors used to change the color to the links so that they when the have been visited they will change color */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 25px;
   display: inline-block;
   font-weight: bold;
   color: rgb(20 127 235);
 }
+/* selecting all the headers in this code block gives them 25px margin stops them blocking onto the next line changes the text color and changes the fontstyle to bold */
 .align{
   display: flex;
   margin: auto;
   padding: 5px;
   width: 500px;
 }
+/* this takes the programming language icons and aligns it within the center of the main part of the page */
 .programming{
   width: 20px;
   height: 20px;
@@ -75,6 +80,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
+/* this allows further editing to the icons themselves */
 #selfie-image{
   width: 250px;
   height: 250px;
@@ -82,101 +88,125 @@ h6 {
   color: rgb(239 121 99);
   border: solid 4px purple;
 }
+/* this gives styling and border to the selfie image to the left of the page */
 #work-title{
   padding-right: 67px;
   border-right: 20px solid black;
 }
+/* This id points towards the heading for work and gives padding and border to the right of the header */
 #work{
   height: 820px;
 }
+/* this  points towards the work section and creates a size for the area on the webpage*/
 .mainCard{
   width: 1000px;
   height: 497px;
-  position: relative;
-  top: 20px;
   color: rgb(239 121 99);
 }
+/* This points towards the main card and creates the sizing  */
 .mainCard h4{
-  left: 1px;
+  left: 30px;
 }
+/* this changes the location of the maincard's header */
 #mainCardImg {
-  width: 81vw;
-  height: 51vh;
+  width: 99vw;
+  height: 60vh;
 }
+/* this line changes the sizing for the image's width and height  */
 .card{
 width: 450px;
 height: 200px;
 text-align: center;
 }
+/* this line changes the height and centers the content for the other cards */
 .card h4, .mainCard h4{
   position: relative;
-  bottom: 48px;
+  bottom: 85px;
   right: 104px;
   color: rgb(239 121 99);
   background-color: rgb(3, 83, 164);
 }
+/* this changes the css position and colors for the headings for both sets of cards */
 .card img{
-  width: 100%;
-  height: 300px;
+  width: 500px;
+  height: 332px;
+  padding-top: 61px;
 }
+/* this changes the normal cards  image sizing */
 
 p {
   display: inline-block;
   position: absolute;
   top: 413px;
-  left: 449;
+  left: 449px;
   margin: 0 auto;
   text-align: center;
   color: rgb(239 121 99);
 }
+/* this changes the alignment and postiioning for the paragraph before the work section it also changes the color and text alignment for the paragraph itself */
 .grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "work-title lightboard lightboard lightboard" 
-  "./.. Calculator  sunny-surfers runner-app";
+  grid-template-areas: "work-title heriseon heriseon heriseon" 
+  "work-title portfolio  password-generator coding-quiz";
   /* justify-content: space-evenly; */
   width: 100vw;
 }
+/* this class creates arranges and positions grid items with their associated names */
 .grid-item{
   margin: 5px;
 }
+/* this adds additional margin to the grid items */
 #work-title{
   grid-area: work-title;
 }
-#lightboard{
-  grid-area: lightboard;
+/* this defines the name for one of the grid areas */
+#heriseon{
+  grid-area: heriseon;
 }
-#Calculator{
-  grid-area: Calculator;
+/* this defines the name for one of the grid areas */
+#portfolio{
+  grid-area: portfolio;
 }
-#sunny-surfers{
-  grid-area: sunny-surfers;
+/* this defines the name for one of the grid areas */
+#password-generator {
+  grid-area: password-generator;
 }
-#runner-app{
-  grid-area: runner-app;
+/* this defines the name for one of the grid areas */
+#coding-quiz{
+  grid-area: coding-quiz;
 }
+/* this defines the name for one of the grid areas */
 #contact{
   position: absolute;
-  top: 3100px;
-  width: 100vw;
+  top: 1590px;
+  width: 82vw;
   height: 30vh;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
+/* this creates postioning and sizing css including the use of flex to position the contact section at the bottom of the page */
 .footer-nav{
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  height: 250px;
+  width: 65vw;
+  height: 41px;
+  position: relative;
+  top: 23px;
 }
+/* this changes the positioning and sizing for the footer navigation landmark */
 .footer-nav li{
 display: flex;
 flex-direction: row;
 list-style: none;
 margin: 10px;
 }
+/* this creates more sizing and spacing declarations for the footer nav landmarks list items
+ */
+
+/* responsive web development section */
 
 /* media queries needs to be added so that our webpage is responive on multiple device sizes */
 @media only screen and (max-width: 600px) {
@@ -209,10 +239,10 @@ margin: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
    grid-template-areas: "work-title"
-   "lightboard"
-   " Calculator"
-   " sunny-surfers"
-   "runner-app";
+   "heriseon"
+   " portfolio"
+   " password-generator"
+   "coding-quiz";
   }
   #work-title{
     border-right: none;
@@ -232,19 +262,19 @@ margin: 10px;
     bottom: 72px;
     left: 1px;  
   }
-  #lightboard{
+  #heriseon{
     width: 100vw;
     height: 50vh;
   }
-  #Calculator{
+  #portfolio{
     width: 45vw;
     height: 50vh;
   }
-  #sunny-surfers{
+  #password-generator{
     width: 45vw;
     height: 50vh;
   }
-  #runner-app{
+  #coding-quiz{
     width: 45vw;
     height: 50vh;
   }
@@ -276,10 +306,10 @@ margin: 10px;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
    grid-template-areas: "work-title"
-   "lightboard"
-   " Calculator"
-   " sunny-surfers"
-   "runner-app";
+   "heriseon"
+   " portfolio"
+   " password-generator"
+   "coding-quiz";
    justify-content: center;
   }
   .grid-item{
@@ -299,10 +329,10 @@ margin: 10px;
     display: inline-flex;
     justify-content: center;
   }
-  h1[
+  h1{
     display: flex;
     justify-content: flex-start;
-  ]
+}
   .card{
     width: 998px;
     height: 200px;
