@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -132,7 +134,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "work-title lightboard lightboard lightboard" 
-  "... Calculator  sunny-surfers runner-app";
+  "./.. Calculator  sunny-surfers runner-app";
   /* justify-content: space-evenly; */
   width: 100vw;
 }
