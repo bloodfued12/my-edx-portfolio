@@ -15,5 +15,5 @@ I learnt that the google inspect tool is a very helpful tool for frontend web de
 ## what makes the project stand out?
 I would say that the project doesn't scream immediately to hire me but it does effectively show what methods and techniques I have used such as where I have made comments in the source code.
 ## live Development link below
-![Live dev pic](./assets/portfolio-website.png)
+![Live dev pic](./portfolio-website.png)
 https://bloodfued12.github.io/my-edx-portfolio/assets/index.html
